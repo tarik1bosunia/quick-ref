@@ -62,6 +62,23 @@ Host github.com-work
   IdentityFile ~/.ssh/id_ed25519_work
 ```
 
+### if personal account want to use normally without personal written
+```ssh
+# Default GitHub (Personal)
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519_personal
+  IdentitiesOnly yes
+
+# Work GitHub
+Host github.com-work
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519_work
+  IdentitiesOnly yes
+```
+
 ---
 
 ## Step 5: Clone Repositories Using Aliased Host
